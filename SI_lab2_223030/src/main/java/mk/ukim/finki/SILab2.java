@@ -1,4 +1,4 @@
-package mk.finki.ukim;
+package mk.ukim.finki;
 
 import java.util.List;
 

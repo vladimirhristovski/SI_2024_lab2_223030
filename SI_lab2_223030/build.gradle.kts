@@ -2,7 +2,7 @@ plugins {
     id("java")
 }
 
-group = "mk.finki.ukim"
+group = "mk.ukim.finki"
 version = "1.0-SNAPSHOT"
 
 repositories {
