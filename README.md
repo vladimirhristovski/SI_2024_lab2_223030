@@ -37,7 +37,7 @@
 - Се праќа листа со 1 објект со null вредност на атрибутот Barcode, со цел да се фрли RuntimeException("No barcode!").
 
 Тест случаи за Multiple Condition критериумот:
-1. allItems = [Item(Name = 012, Barcode = null, Price = 350, Discount = 0.5)],  payment = 145
+1. allItems = [Item(Name = 012, Barcode = 012, Price = 350, Discount = 0.5)],  payment = 145
 - Со овој тест условите во if условот би биле true && true && true со што програмата ќе продолжи да се извршува во if условот.
 
 2. allItems = [Item(Name = something, Barcode = 123, Price = 350, Discount = 0.5)],  payment = 145
