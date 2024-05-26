@@ -4,15 +4,15 @@
 
 ###  Control Flow Graph
 
-![SILab2](https://github.com/vladimirhristovski/SI_2024_lab2_223030/assets/117442187/f1618670-9753-4c22-b0f3-d1eebfaf63e9)
+![SILab2](https://github.com/vladimirhristovski/SI_2024_lab2_223030/assets/117442187/af7c0338-a923-48ee-83e2-d1db32558a13)
 
 ### Цикломатска комплексност
 
 Цикломатската комплексност на овој код е 10, истата ја добив преку формулата P+1, каде што P е бројот на предикатни јазли(if-ови и for-ови во нашиот случај). Во случајoв P=9, па цикломатската комплексност изнесува 10.
 
-### Тест случаи според критериумот  Every statement 
+### Тест случаи според критериумот Every Branch 
 
-....
+![SILab2EB](https://github.com/vladimirhristovski/SI_2024_lab2_223030/assets/117442187/ebc5e19d-2fd0-4276-94d8-55ebc8fbbe17)
 
 ### Тест случаи според критериумот Multiple Condition
 
