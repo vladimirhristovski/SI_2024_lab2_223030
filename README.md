@@ -20,5 +20,22 @@
 
 ### Објаснување на напишаните unit tests
 
-...
+Тест случаи за Every Branch критериумот:
+1. allItems = null, payment = whatever
+- Се праќа null вредност на листата allItems, со цел да се фрли RuntimeException("allItems list can't be null!").
+
+2. allItems = [Item(Name = null, Barcode = 012, Price = 350, Discount = -1), Item(Name = something, Barcode = 123, Price = 250, Discount = 0.5)], payment = 1000
+- Се праќа листа со 2 објекти и голема вредност за payment, со цел да се врати true.
+
+3. allItems = [Item(Name = null, Barcode = 012, Price = 350, Discount = -1), Item(Name = something, Barcode = 123, Price = 250, Discount = 0.5)], payment = 10
+- Се праќа листа со 2 објекти и маla вредност за payment, со цел да се врати false.
+
+4. allItems = [Item(Name = null, Barcode = a, Price = 350, Discount = -1)], payment = 10
+- Се праќа листа со 1 објект со несоодветна вредност на атрибутот Barcode, со цел да се фрли RuntimeException("Invalid character in item barcode!").
+
+5. allItems = [Item(Name = null, Barcode = null, Price = 350, Discount = -1)], payment = 10
+- Се праќа листа со 1 објект со null вредност на атрибутот Barcode, со цел да се фрли RuntimeException("No barcode!").
+
+Тест случаи за Multiple Condition критериумот:
+
 ...
