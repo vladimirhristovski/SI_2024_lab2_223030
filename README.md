@@ -16,7 +16,7 @@
 
 ### Тест случаи според критериумот Multiple Condition
 
-![SLlab2MC](https://github.com/vladimirhristovski/SI_2024_lab2_223030/assets/117442187/d74d5e7b-9bb8-40da-ab6d-e22855124250)
+![SILab2MC](https://github.com/vladimirhristovski/SI_2024_lab2_223030/assets/117442187/1546fe01-f164-40ad-9eff-0c988eca90b1)
 
 ### Објаснување на напишаните unit tests
 
@@ -37,14 +37,14 @@
 - Се праќа листа со 1 објект со null вредност на атрибутот Barcode, со цел да се фрли RuntimeException("No barcode!").
 
 Тест случаи за Multiple Condition критериумот:
-1. allItems = [Item(Name = 012, Barcode = null, Price = 350, Discount = 0.5)],  payment = 10
+1. allItems = [Item(Name = 012, Barcode = null, Price = 350, Discount = 0.5)],  payment = 145
 - Со овој тест условите во if условот би биле true && true && true со што програмата ќе продолжи да се извршува во if условот.
 
-2. allItems = [Item(Name = 123, Barcode = null, Price = 350, Discount = 0.5)],  payment = 10
+2. allItems = [Item(Name = something, Barcode = 123, Price = 350, Discount = 0.5)],  payment = 145
 - Со овој тест условите во if условот би биле true && true && false со што програмата нема да продолжи да се извршува во if условот.
 
-3. allItems = [Item(Name = 123, Barcode = null, Price = 350, Discount = -1)],  payment = 10
+3. allItems = [Item(Name = something, Barcode = 123, Price = 350, Discount = -1)],  payment = 145
 - Со овој тест условите во if условот би биле true && false && false со што програмата нема да продолжи да се извршува во if условот.
 
-4. allItems = [Item(Name = 123, Barcode = null, Price = 250, Discount = -1)],  payment = 10
+4. allItems = [Item(Name = something, Barcode = 123, Price = 250, Discount = -1)],  payment = 145
 - Со овој тест условите во if условот би биле false && false && false со што програмата нема да продолжи да се извршува во if условот.
