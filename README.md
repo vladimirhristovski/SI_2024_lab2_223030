@@ -12,7 +12,7 @@
 
 ### Тест случаи според критериумот Every Branch 
 
-![SILab2EB](https://github.com/vladimirhristovski/SI_2024_lab2_223030/assets/117442187/ebc5e19d-2fd0-4276-94d8-55ebc8fbbe17)
+![SILab2EB](https://github.com/vladimirhristovski/SI_2024_lab2_223030/assets/117442187/72ec58fd-0057-4443-87e5-6c50ddc6dac6)
 
 ### Тест случаи според критериумот Multiple Condition
 
@@ -24,10 +24,10 @@
 1. allItems = null, payment = whatever
 - Се праќа null вредност на листата allItems, со цел да се фрли RuntimeException("allItems list can't be null!").
 
-2. allItems = [Item(Name = null, Barcode = 012, Price = 350, Discount = -1), Item(Name = something, Barcode = 123, Price = 250, Discount = 0.5)], payment = 1000
+2. allItems = [Item(Name = null, Barcode = 012, Price = 350, Discount = 0.5), Item(Name = something, Barcode = 123, Price = 250, Discount = 0.5)], payment = 1000
 - Се праќа листа со 2 објекти и голема вредност за payment, со цел да се врати true.
 
-3. allItems = [Item(Name = null, Barcode = 012, Price = 350, Discount = -1), Item(Name = something, Barcode = 123, Price = 250, Discount = 0.5)], payment = 10
+3. allItems = [Item(Name = null, Barcode = 012, Price = 350, Discount = 0.5), Item(Name = something, Barcode = 123, Price = 250, Discount = 0.5)], payment = 10
 - Се праќа листа со 2 објекти и маla вредност за payment, со цел да се врати false.
 
 4. allItems = [Item(Name = null, Barcode = a, Price = 350, Discount = -1)], payment = 10
