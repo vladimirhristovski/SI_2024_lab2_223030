@@ -28,7 +28,7 @@
 - Се праќа листа со 2 објекти и голема вредност за payment, со цел да се врати true.
 
 3. allItems = [Item(Name = null, Barcode = 012, Price = 350, Discount = 0.5), Item(Name = something, Barcode = 123, Price = 250, Discount = -1)], payment = 10
-- Се праќа листа со 2 објекти и маla вредност за payment, со цел да се врати false.
+- Се праќа листа со 2 објекти и мала вредност за payment, со цел да се врати false.
 
 4. allItems = [Item(Name = null, Barcode = a, Price = 350, Discount = -1)], payment = 10
 - Се праќа листа со 1 објект со несоодветна вредност на атрибутот Barcode, со цел да се фрли RuntimeException("Invalid character in item barcode!").
