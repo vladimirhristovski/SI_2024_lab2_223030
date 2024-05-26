@@ -16,10 +16,10 @@ class SILab2Test {
         assertTrue(ex.getMessage().contains("allItems list can't be null!"));
 
         //2.
-        assertTrue(() -> SILab2.checkCart(List.of(new Item(null,"012",350,0.5F), new Item("something","123",250, 0.5F)), 1000));
+        assertTrue(() -> SILab2.checkCart(List.of(new Item(null,"012",350,0.5F), new Item("something","123",250, -1)), 1000));
 
         //3.
-        assertFalse(() -> SILab2.checkCart(List.of(new Item(null,"012",350,0.5F), new Item("something","123",250, 0.5F)), 10));
+        assertFalse(() -> SILab2.checkCart(List.of(new Item(null,"012",350,0.5F), new Item("something","123",250, -1)), 10));
 
         //4.
         ex = assertThrows(RuntimeException.class, () -> SILab2.checkCart(List.of(new Item(null,"a",350,-1)), 10));
